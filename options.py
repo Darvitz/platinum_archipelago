@@ -6,6 +6,7 @@
 from dataclasses import dataclass
 from typing import Any
 from Options import Choice, DefaultOnToggle, OptionDict, OptionSet, PerGameCommonOptions, Range, Toggle
+import random
 
 class RandomizeHms(DefaultOnToggle):
     """Adds the HMs to the pool."""
@@ -70,6 +71,35 @@ class RemoveBadgeRequirement(OptionSet):
     """
     display_name = "Remove Badge Requirement"
     valid_keys = ["CUT", "FLY", "SURF", "STRENGTH", "DEFOG", "ROCK_SMASH", "WATERFALL", "ROCK_CLIMB"]
+
+    def __init__(self, value):
+    if isinstance(value, list):
+        expanded = []
+
+        # Keep any explicitly entered real keys
+        for k in value:
+            if k not in ("_All", "_Random"):
+                expanded.append(k)
+
+        # If _All is present, add every valid key except the special ones
+        if "_All" in value:
+            expanded = [k for k in self.valid_keys if k not in ("_All", "_Random")]
+        else:
+            # If _Random is present, add a random subset
+            if "_Random" in value:
+                expanded.extend([
+                    k for k in self.valid_keys
+                    if k not in ("_All", "_Random") and random.choice([True, False])
+                ])
+                # Guarantee at least one key if only _Random was chosen
+                if not expanded:
+                    expanded.append(random.choice([k for k in self.valid_keys if k not in ("_All", "_Random")]))
+
+        # Deduplicate
+        value = list(set(expanded))
+
+    super().__init__(value)
+
 
 class VisibilityHmLogic(DefaultOnToggle):
     """Logically require Flash or Defog for traversing and finding locations in applicable regions."""
