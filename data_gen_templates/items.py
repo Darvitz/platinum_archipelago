@@ -37,5 +37,12 @@ items: Mapping[str, ItemData] = {
 
 item_groups: Dict[str, Set[str]] = {
     "HM01": {"HM01 Cut"},
+    "HM02": {"HM02 Fly"},
+    "HM03": {"HM03 Surf"},
+    "HM04": {"HM04 Strength"},
+    "HM05": {"HM05 Defog"},
+    "HM06": {"HM06 Rock Smash"},
+    "HM07": {"HM07 Waterfall"},
+    "HM08": {"HM08 Rock Climb"},
     # TEMPLATE: ITEM_GROUPS
 }
