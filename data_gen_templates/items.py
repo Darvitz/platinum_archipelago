@@ -36,6 +36,6 @@ items: Mapping[str, ItemData] = {
 }
 
 item_groups: Dict[str, Set[str]] = {
-    "HM01": "HM01 Cut"
+    "HM01": {"HM01 Cut"},
     # TEMPLATE: ITEM_GROUPS
 }
