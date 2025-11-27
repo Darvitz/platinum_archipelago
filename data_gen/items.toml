@@ -2273,7 +2273,7 @@ group = "tmhms"
 label = "TM70 Flash"
 id = 397
 clas = "bagitem"
-group = "tmhms"
+group = ["tmhms", "tm70", "flash"]
 classification = "progression"
 
 [tm71]
@@ -2412,56 +2412,56 @@ group = "tmhms"
 label = "HM01 Cut"
 id = 420
 clas = "bagitem"
-group = "tmhms"
+group = ["tmhms", "hm01", "hms"]
 classification = "progression"
 
 [hm02]
 label = "HM02 Fly"
 id = 421
 clas = "bagitem"
-group = "tmhms"
+group = ["tmhms", "hm02", "hms"]
 classification = "progression"
 
 [hm03]
 label = "HM03 Surf"
 id = 422
 clas = "bagitem"
-group = "tmhms"
+group = ["tmhms", "hm03", "hms"]
 classification = "progression"
 
 [hm04]
 label = "HM04 Strength"
 id = 423
 clas = "bagitem"
-group = "tmhms"
+group = ["tmhms", "hm04", "hms"]
 classification = "progression"
 
 [hm05]
 label = "HM05 Defog"
 id = 424
 clas = "bagitem"
-group = "tmhms"
+group = ["tmhms", "hm05", "hms"]
 classification = "progression"
 
 [hm06]
 label = "HM06 Rock Smash"
 id = 425
 clas = "bagitem"
-group = "tmhms"
+group = ["tmhms", "hm06", "hms"]
 classification = "progression"
 
 [hm07]
 label = "HM07 Waterfall"
 id = 426
 clas = "bagitem"
-group = "tmhms"
+group = ["tmhms", "hm07", "hms"]
 classification = "progression"
 
 [hm08]
 label = "HM08 Rock Climb"
 id = 427
 clas = "bagitem"
-group = "tmhms"
+group = ["tmhms", "hm08", "hms"]
 classification = "progression"
 
 [explorer_kit]
