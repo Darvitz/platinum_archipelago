@@ -19,7 +19,6 @@ class ItemData:
     label: str
     id: int
     clas: ItemClass
-    group: str
     count: int = 1
     classification: ItemClassification = ItemClassification.filler
 
