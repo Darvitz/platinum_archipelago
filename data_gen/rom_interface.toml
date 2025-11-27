@@ -50,3 +50,17 @@ item_group.medicine = "Medicine"
 item_group.mail = "Mail"
 item_group.poketch_apps = "Pokétch and Apps"
 item_group.battle_items = "Battle Items"
+item_group.tm70 = "TM70"
+item_group.flash = "Flash"
+item_group.hm01 = "HM01"
+item_group.hm02 = "HM02"
+item_group.hm03 = "HM03"
+item_group.hm04 = "HM04"
+item_group.hm05 = "HM05"
+item_group.hm06 = "HM06"
+item_group.hm07 = "HM07"
+item_group.hm08 = "HM08"
+item_group.hms = "HMs"
+
+
+
